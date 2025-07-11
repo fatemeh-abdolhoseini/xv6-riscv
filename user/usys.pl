@@ -40,3 +40,4 @@ entry("uptime");
 entry("thread");
 entry("jointhread");
 
+entry("yield");
