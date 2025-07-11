@@ -8,6 +8,8 @@
 #define STACK_SIZE 100
 
 // Simple mutex using atomic operations
+//adding mutex
+
 volatile int print_lock = 0;
 
 void acquire_print_lock() {
@@ -19,6 +21,7 @@ void acquire_print_lock() {
 void release_print_lock() {
     __sync_lock_release(&print_lock);
 }
+
 
 struct thread_data {
     int thread_id;
